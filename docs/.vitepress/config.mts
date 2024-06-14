@@ -91,6 +91,23 @@ export default defineConfig({
       }
     ],
 
+    // Search
+    search: {
+      provider: 'local'
+    },
+
+    // Edit Link
+    editLink: {
+      pattern: ({ filePath }) => {
+        if (filePath.startsWith('/docs/reference/')) {
+          return `https://github.com/raviMukti/engineering-guideline/edit/main/${filePath}`
+        } else {
+          return `https://github.com/raviMukti/engineering-guideline/edit/main/docs/${filePath}`
+        }
+      },
+      text: 'Edit this page on GitHub'
+    },
+
     // Social Links
     socialLinks: [
       { icon: 'github', link: 'https://github.com/waizly/engineering-guideline' }
@@ -113,5 +130,7 @@ export default defineConfig({
       md.render('- [x] unchecked')
     }
   },
+
+  lastUpdated: true,
 
 })
