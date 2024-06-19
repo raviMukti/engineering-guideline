@@ -33,42 +33,28 @@ export default defineConfig({
         text: 'Code Style',
         collapsed: true,
         items: [
-          { text: 'Formatter', link: '/reference/code-style/formatter' },
-          { text: 'Linter', link: '/reference/code-style/linter' }
+          { text: 'Formatter-Linter', link: '/reference/code-style/formatter-linter' },
         ]
       },
       {
         text: 'Version Control',
         collapsed: true,
         items: [
-          { text: 'Branching', link: '/reference/version-control/branching' },
-          { text: 'Pull Request', link: '/reference/version-control/pull-request' },
-        ]
-      },
-      {
-        text: 'Testing',
-        collapsed: true,
-        items: [
-          { text: 'Static Code', link: '/reference/testing/static-code' },
-          { text: 'Integration Test', link: '/reference/testing/integration-test' }
+          { text: 'Branching-PR', link: '/reference/version-control/branching-pr' },
         ]
       },
       {
         text: 'Deployment',
         collapsed: true,
         items: [
-          { text: 'Production', link: '/reference/deployment/production' },
-          { text: 'Staging', link: '/reference/deployment/staging' },
+          { text: 'Deploy', link: '/reference/deployment/deploy' },
         ]
       },
       {
         text: 'Logging',
         collapsed: true,
         items: [
-          { text: 'Backend', link: '/reference/logging/backend' },
-          { text: 'Frontend', link: '/reference/logging/frontend' },
-          { text: 'Fullstack', link: '/reference/logging/fullstack' },
-          { text: 'Mobile', link: '/reference/logging/mobile' },
+          { text: 'Logging', link: '/reference/logging/logging' },
         ]
       },
       {
@@ -79,16 +65,6 @@ export default defineConfig({
           { text: 'Design Pattern', link: '/reference/tips-trick/design-pattern' },
         ]
       },
-      {
-        text: 'Golden Path',
-        collapsed: true,
-        items: [
-          { text: 'Backend', link: '/reference/golden-path/backend' },
-          { text: 'Frontend', link: '/reference/golden-path/frontend' },
-          { text: 'Fullstack', link: '/reference/golden-path/fullstack' },
-          { text: 'Mobile', link: '/reference/golden-path/mobile' },
-        ]
-      }
     ],
 
     // Search
